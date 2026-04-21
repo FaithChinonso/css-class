@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS beginner Tutorial</title>
+
+    <style>
+      /* There are four ways to style an element
+        1. using the element selector
+        2. using the class selector
+        3. using the id selector
+        4. inline style
+        */
+
+      /* 
+        Id selector comes first,
+        Class selector comes second
+        element selector comes last
+        inline styling
+        */
+
+    /* HOW TO COLOR YOUR ELEMENT
+    1. basic color names like red, black, blue
+    2. hex code thats start # and 6 figures, you can get that online  #ff0000 2. rgb eg rgb(255,255,255) #ffffff rg(0,0,0) rgb(33,33,33) rgb(55,55,55) rgb(255,0,0) rgb(0,0,255) rgb(0,255,0)
+    3. hsl is hue, saturation and lightness
+
+
+    /* your html document is divided into 2, head and the body, the head house all browser instructions that is not visible to the human eye, the body house everything the users sees
+
+    BACKGROUND STYLING
+    there are several properties to style background, we have background-color, background-image that attach an image to your background,you set your background image link using the url 
+    keywork as seen in the example below, background-repeat specifies how your image is repeated in your document, we have 'no-repeat', 'repeat' (this repeats the image both vertically and horizontally)
+    , 'repeat-x' and repeat-y
+
+    the background property can be used as shortcut for all the background styling properties
+    background: #aa0099 url('/images/backdrop.jpg') repeat right top fixed
+
+
+
+      /* styling using element selector */∆
+      body {
+        background-color: beige; font-family: Arial; padding: 20px 30px 50px 35px;
+        /* padding-top: 20px;
+        padding-left: 30px;
+        padding-bottom: 50px;
+        padding-right: 35px; */
+      }
+      h1 {
+        color: green;
+        text-align: center;
+      }
+      h2 {
+        color: white;
+        font-size: 45px;
+        font-size: medium;
+      }
+      p{
+        font-size: 20px;
+        color: white;
+      }
+      h3 {
+        color: rgb(0,120,0);
+        font-size: large;
+      }
+      h4 {
+        color: aquamarine;
+        text-align: center;
+      }
+
+      span {
+        color: red;
+      }
+      /* styling using id selector . not that to select an html element using id selector you have to declare it starting with "#"*/
+
+      #css-text {
+        color: blueviolet;
+      }
+      /* styling using class selector . not that to select an html element using class selector you have to declare it starting with "." followed the assigned namee*/
+      .css-class-text {
+        color: blueviolet;
+      }
+      #first {
+        color: black;
+        padding: 10px;
+      }
+      #second {
+        color: white;
+      }
+      .text {
+        padding: 20px;
+        background-color: red;
+        color: red;
+      }
+    </style>
+        <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body style="background-image: url('/images/backdrop.jpg'); background-repeat: repeat; background-size: 600px;">
+    <div >
+      <!-- inline style, notice how they style attribute is placed directly in the html element -->
+      <h1 style="background-color: white; color: brown; padding: 20px">
+        This is a <span id="css-text" class="css-class-text">CSS</span> Tutorial
+        <span>Class</span>
+      </h1>
+      <h2 style="background-color: aquamarine">
+        To continue with the class
+        <button class="css-class-text">press here</button>
+      </h2>
+      <h2 id="first" class="text">First</h2>
+      <h2 id="second" class="text">Second</h2>
+      <h3
+        style="
+          background-color: whitesmoke;
+          text-align: center;
+          padding: 10px;
+          border-radius: 5px;
+        "
+      >
+        I wish I can figure this out
+      </h3>
+      <h4 class="text"></h4> style="background-color: pink">
+        Dont give up <span class="css-class-text">continue by</span>
+        <button>tapping here</button>
+      </h4>
+    </div>
+    <div>
+
+
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10" style="height: 800px; margin-top: 300px; background-color: blue;">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+    </div>
+  </body>
+</html>

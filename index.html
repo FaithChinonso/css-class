@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS beginner Tutorial</title>
+    <link rel="stylesheet" src="/styles/index.css" />
+    <style>
+      /* There are three ways to style an element
+        1. using the element selector
+        2. using the class selector
+        3. using the id selector
+        4. inline style
+        */
+      /* 
+        Id selector comes first,
+        Class selector comes second
+        element selector comes last
+        */
+      /* styling using element selector */
+
+      /* Links can be used in 3 ways
+      1. to direct users to an external site 
+      2. styled as a button
+      3. used to create a  bookmark
+      */
+      body {
+        background-color: beige;
+        background-image: url("https://images.pexels.com/photos/33750237/pexels-photo-33750237.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-y;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: white;
+        padding: 20px;
+      }
+      .logo {
+        width: 60px;
+        height: 30px;
+      }
+      .navlist {
+        padding: 20px;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #a1a1a1;
+      }
+      .navlink {
+        color: white;
+        list-style: none;
+      }
+
+      h1 {
+        color: green;
+      }
+      h2 {
+        color: brown;
+      }
+      p {
+        color: white;
+        font-size: large;
+        font-weight: normal;
+        text-align: center;
+      }
+
+      span {
+        color: red;
+      }
+      /* styling using id selector . not that to select an html element using id selector you have to declare it starting with "#"*/
+
+      #css-text {
+        color: blueviolet;
+      }
+      /* styling using class selector . not that to select an html element using class selector you have to declare it starting with "." followed the assigned namee*/
+      .css-class-text {
+        color: blue;
+        font-weight: bold;
+      }
+      .study {
+        color: bisque;
+      }
+
+      a:hover {
+        color: blue;
+      }
+      button {
+        color: blueviolet;
+        background-color: hotpink;
+      }
+      /* styling my second div with content box */
+      .understanding {
+        font-size: medium;
+        font-style: italic;
+        text-align: left;
+        padding-left: 50px;
+      }
+      .understanding button {
+        padding: 20px;
+        font-style: normal;
+        background-color: whitesmoke;
+        color: blueviolet;
+      }
+      .ending {
+        color: aqua;
+        font-style: oblique;
+        text-align: left;
+        padding-left: 50px;
+      }
+      .ending button {
+        padding: 30px;
+        color: grey;
+      }
+      .understanding .button1 {
+        background-color: chocolate;
+      }
+      .understanding .button2 {
+        background-color: darkolivegreen;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <image src="backdrop.jpg" class="logo" />
+      <ul class="navlist">
+        <!-- bookmark on the same page -->
+        <li class="navlink"><a href="#pricing">Pricing</a></li>
+        <li class="navlink"><a href="#service">Services</a></li>
+        <li class="navlink"><a href="#product">Product</a></li>
+
+        <!-- bookmark an external page -->
+
+        <li class="navlink">
+          <a href="test.html#C10" target="_blank">Test.html</a>
+        </li>
+      </ul>
+    </nav>
+    <audio
+      src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3"
+      controls
+      loop
+      muted
+    ></audio>
+    <video
+      src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+      loop
+      controls
+      muted
+      poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+      width="400"
+    ></video>
+
+    <p
+      style="
+        border: 3px solid white;
+        text-align: left;
+        padding: 40px;
+        margin: 50px;
+        width: 400px;
+      "
+    >
+      Text 34
+    </p>
+    <iframe
+      src="https://stg-learners.stakestack.ai/pricing"
+      title="StackStack Website for ai powered course generation"
+      width="100%"
+      height="800px"
+    >
+      <div style="background-color: brown">
+        <a href="https://freecodecamp.org" target="_parent"
+          >Visit freeCodeCamp</a
+        >
+      </div>
+    </iframe>
+
+    <a href="https://freecodecamp.org" target="_blank" style="font-size: 32px"
+      >Visit freeCodeCamp</a
+    >
+    <div>
+      <!-- inline style, notice how they style attribute is placed directly in the html element -->
+      <h1 style="background-color: white">
+        This is a <span id="css-text" class="css-class-text">CSS</span> Tutorial
+        <span>Class</span>
+      </h1>
+      <div
+        id="service"
+        style="background-color: red; width: 100%; height: 800px"
+      >
+        <img
+          src="/images//Optimizing database performance visually.png"
+          alt="image"
+          style="
+            width: 80%;
+            height: 1200px;
+            max-width: 500px;
+            max-height: 50%;
+            background-color: black;
+          "
+        />
+      </div>
+      <h2 style="background-color: blue" class="study">
+        Now you click <button>here</button> to continue
+      </h2>
+
+      <p>
+        This paragraph contains a span called
+        <span class="css-class-text">subject</span>
+      </p>
+    </div>
+    <img
+      src="/images//Optimizing database performance visually.png"
+      alt="alt"
+    />
+
+    <div id="pricing">
+      <h1 style="background-color: pink" class="understanding">
+        Also click <button class="button1">here</button> to move further
+        <button class="button2">Test Button 2</button>
+      </h1>
+      <h2 style="background-color: blueviolet" class="ending">
+        here we wrap up the class you can now <button>click here</button> and
+        <button>submit here</button> to end the class
+      </h2>
+    </div>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <h6>
+      t is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </h6>
+
+    <p>
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary,
+      making this the first true generator on the Internet. It uses a dictionary
+      of over 200 Latin words, combined with a handful of model sentence
+      structures, to generate Lorem Ipsum which looks reasonable. The generated
+      Lorem Ipsum is therefore always free from repetition, injected humour, or
+      non-characteristic words etc.
+    </p>
+    <ul>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+    </ul>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <h6>
+      t is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </h6>
+
+    <p>
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary,
+      making this the first true generator on the Internet. It uses a dictionary
+      of over 200 Latin words, combined with a handful of model sentence
+      structures, to generate Lorem Ipsum which looks reasonable. The generated
+      Lorem Ipsum is therefore always free from repetition, injected humour, or
+      non-characteristic words etc.
+    </p>
+    <ul>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+    </ul>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <h6>
+      t is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </h6>
+
+    <p>
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary,
+      making this the first true generator on the Internet. It uses a dictionary
+      of over 200 Latin words, combined with a handful of model sentence
+      structures, to generate Lorem Ipsum which looks reasonable. The generated
+      Lorem Ipsum is therefore always free from repetition, injected humour, or
+      non-characteristic words etc.
+    </p>
+    <ul>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+    </ul>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <h6>
+      t is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </h6>
+
+    <p>
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary,
+      making this the first true generator on the Internet. It uses a dictionary
+      of over 200 Latin words, combined with a handful of model sentence
+      structures, to generate Lorem Ipsum which looks reasonable. The generated
+      Lorem Ipsum is therefore always free from repetition, injected humour, or
+      non-characteristic words etc.
+    </p>
+    <ul>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+    </ul>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <h6>
+      t is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </h6>
+
+    <p>
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary,
+      making this the first true generator on the Internet. It uses a dictionary
+      of over 200 Latin words, combined with a handful of model sentence
+      structures, to generate Lorem Ipsum which looks reasonable. The generated
+      Lorem Ipsum is therefore always free from repetition, injected humour, or
+      non-characteristic words etc.
+    </p>
+    <ul>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+    </ul>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <h6>
+      t is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </h6>
+
+    <p>
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary,
+      making this the first true generator on the Internet. It uses a dictionary
+      of over 200 Latin words, combined with a handful of model sentence
+      structures, to generate Lorem Ipsum which looks reasonable. The generated
+      Lorem Ipsum is therefore always free from repetition, injected humour, or
+      non-characteristic words etc.
+    </p>
+    <ul>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+    </ul>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <h6>
+      t is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </h6>
+
+    <p>
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary,
+      making this the first true generator on the Internet. It uses a dictionary
+      of over 200 Latin words, combined with a handful of model sentence
+      structures, to generate Lorem Ipsum which looks reasonable. The generated
+      Lorem Ipsum is therefore always free from repetition, injected humour, or
+      non-characteristic words etc.
+    </p>
+    <ul>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+    </ul>
+    <p>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently with desktop
+      publishing software like Aldus PageMaker including versions of Lorem
+      Ipsum.
+    </p>
+    <h6>
+      t is a long established fact that a reader will be distracted by the
+      readable content of a page when looking at its layout. The point of using
+      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
+      as opposed to using 'Content here, content here', making it look like
+      readable English. Many desktop publishing packages and web page editors
+      now use Lorem Ipsum as their default model text, and a search for 'lorem
+      ipsum' will uncover many web sites still in their infancy. Various
+      versions have evolved over the years, sometimes by accident, sometimes on
+      purpose (injected humour and the like).
+    </h6>
+
+    <p>
+      There are many variations of passages of Lorem Ipsum available, but the
+      majority have suffered alteration in some form, by injected humour, or
+      randomised words which don't look even slightly believable. If you are
+      going to use a passage of Lorem Ipsum, you need to be sure there isn't
+      anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+      generators on the Internet tend to repeat predefined chunks as necessary,
+      making this the first true generator on the Internet. It uses a dictionary
+      of over 200 Latin words, combined with a handful of model sentence
+      structures, to generate Lorem Ipsum which looks reasonable. The generated
+      Lorem Ipsum is therefore always free from repetition, injected humour, or
+      non-characteristic words etc.
+    </p>
+    <ul id="product">
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+      <li>First</li>
+      <li>Secomd</li>
+    </ul>
+  </body>
+</html>
