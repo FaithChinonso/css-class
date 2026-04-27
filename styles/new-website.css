@@ -1,0 +1,44 @@
+body {
+  width: 100%;
+}
+
+#header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  background-color: beige;
+  padding: 20px;
+}
+.nav-items a {
+  font-family: Figtree;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+
+  line-height: 100%;
+  letter-spacing: 0px;
+  vertical-align: middle;
+}
+#main {
+  background-color: red;
+  height: 400px;
+}
+#footer {
+  background-color: green;
+  height: 400px;
+}
+.logo-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  /* border-radius: 50%; */
+}
